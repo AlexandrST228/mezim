@@ -1,0 +1,639 @@
+@import url("./ObnulenieCSS.css");
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+html{
+   background-color: #f7f7f7;
+}
+
+header{
+   width: 100%;
+}
+
+.footer{
+   width: 100%;
+   background-color: #2C2C32;
+   margin: 121px 0 0 0;
+}
+
+.header__container{
+   max-width: 962px;
+   
+   margin: 30px auto;
+   
+}
+
+.header__content{
+display: flex;
+justify-content: space-between;
+}
+
+
+
+.header__text a{
+font-family: WorkSans, sans-serif;
+font-size: 13px;
+font-weight: 400;
+line-height: 150%;
+color: black;
+padding: 0 0 0 41px;
+}
+
+.header__text{
+margin: 5px 0 0 0px;
+}
+
+.navigation{
+   width: 100%;
+}
+
+.navigation__container{
+max-width: 962px;
+
+margin: 43px auto;
+}
+
+.navigation__content{
+   max-width: 95%;
+   height: 20px;
+   
+}
+
+.navigation__content a{
+font-family: WorkSans, sans-serif;
+font-size: 13px;
+font-weight: 400;
+line-height: 150%;
+color: #4F68A4;
+}
+
+.navigation__content a:last-child{
+   color: black;
+}
+
+.mezim{
+   max-width: 100%;
+}
+
+.mezim__container{
+   max-width: 962px;
+   margin: 43px auto;
+}
+
+.mezim__content{
+   display: flex;
+   justify-content: space-between;
+}
+
+.white__block__img{
+   width: 366px;
+   height: 366px;
+   background-color: white;
+   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+   background-image: url(../IMG/mezim.png);
+   background-repeat: no-repeat;
+   background-position: 50%;
+}
+
+.mezim__content__text{
+   float: right;
+}
+
+.mezim__content__text h1{
+   font-size: 30px;
+   font-weight: 700;
+   line-height: 150%;
+   
+}
+
+.description{
+   display: flex;
+}
+
+.description__content{
+   margin: 48px 0 0 0;
+}
+
+
+
+.mezim__content__text span{
+font-family: WorkSans, sans-serif;
+font-weight: 600;
+font-size: 13px;
+line-height: 150%;
+padding: 15px 0 0 0;
+}
+
+.mezim__content__text p{
+   font-family: WorkSans, sans-serif;
+font-weight: normal;
+font-size: 13px;
+line-height: 150%;
+padding: 15px 0 0 10px;
+
+}
+
+.accordion {
+   background-color: white;
+   color: black;
+   cursor: pointer;
+   height: 40px;
+   width: 100%;
+   text-align: left;
+   outline: none;
+   font-size: 18px;
+   transition: 0.5s;
+   margin: 13px 0 0 0;
+}
+
+.accordion__content{
+   width: 100%;
+}
+
+.accordion__container{
+   max-width: 962px;
+   margin: 0 auto;
+}
+
+.active,
+.accordion:hover {
+   background-color: #607D8B;
+}
+
+.accordion:after {
+   width: 40px;
+   height: 40px;
+   background-color: #4F68A4;
+   content: '\002B';
+   color: #fff;
+   font-size: 18px;
+   font-weight: bold;
+   float: left;
+   font-family: WorkSans,
+   sans-serif;
+}
+
+.active:after {
+   content: "\2212";
+}
+
+.panel {
+   padding: 0 18px;
+   color: #212121;
+   background-color: #fff;
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height 0.3s ease-out;
+}
+
+.questions{
+   width: 100%;
+   margin: 62px 0 0 0;
+}
+
+.questions__container{
+   max-width: 962px;
+   margin: 0 auto;
+}
+
+.questions__contetn{
+   display: flex;
+   justify-content: space-between;
+   margin: 0 auto;
+}
+
+.rect__ques h1{
+   font-weight: 700;
+   font-size: 25px;
+   line-height: 140%;
+   font-family: WorkSans,
+   sans-serif;
+}
+
+.rect__ques p{
+   font-weight: 500;
+   font-size: 11.5px;
+   line-height: 170%;
+   font-family: WorkSans, sans-serif;
+}
+
+.name{
+   width: 497px;
+   height: 37px;
+   background-color: #FDF9F3;
+   margin: 11px 0px;
+   font-weight: 500;
+   font-size: 13px;
+   line-height: 150%;
+   padding: 0 0 0 10px;
+   color: black;
+}
+
+.message{
+   width: 497px;
+   height: 98px;
+   background-color: #FDF9F3;
+   margin: 11px 0px;
+   font-weight: 500;
+   font-size: 13px;
+   line-height: 150%;
+   color: black;
+   padding: 0 0 0 10px;
+}
+
+.rect__ques a{
+   text-decoration: underline;
+}
+
+.Send{
+   width: 143px;
+   height: 41px;
+   background-color: #3E3E47;
+   font-weight: 600;
+   font-size: 13px;
+   line-height: 150%;
+   font-family: WorkSans, sans-serif;
+   color: white;
+}
+
+.analog{
+   width: 100%;
+   margin: 54px 0 0 0;
+}
+
+.analog__container{
+   max-width: 962px;
+   margin: 0 auto;
+}
+
+.analog__content h1{
+font-weight: 700;
+font-size: 25px;
+line-height: 150%;
+}
+
+.analog__content p{
+   font-weight: 300;
+   font-size: 15px;
+   line-height: 150%;
+   padding: 14px 0 0 0;
+   font-family: WorkSans,
+   sans-serif;
+}
+
+.square__content{
+   max-width: 245px;
+}
+
+.mezim__analog{
+   display: flex;
+   justify-content: space-between;
+   margin: 28px 0 0 0;
+   font-family: WorkSans,
+   sans-serif;
+}
+
+.square{
+   width: 298px;
+   height: 327px;
+   background-color: white;
+   background-image: url('../IMG/mezim__mini.png');
+   background-repeat: no-repeat;
+   background-position: 50% 10%;
+   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+}
+
+.square h1{
+font-weight: 600;
+font-size: 13px;
+line-height: 150%;
+font-family: WorkSans, sans-serif;
+padding: 161px 0 0 29px;
+}
+
+.square p {
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 150%;
+   font-family: WorkSans, sans-serif;
+   padding: 3px 0 0 29px;
+}
+
+.offers{
+   display: flex;
+   margin: 57px 0 0 0;
+   justify-content: space-between;
+}
+
+.offers__text span{
+font-family: WorkSans, sans-serif;
+font-weight: 600;
+font-size: 13px;
+line-height: 150%;
+padding: 0 0 0 29px;
+}
+
+.offers__text p {
+   font-family: WorkSans,
+   sans-serif;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 150%;
+   color: gray;
+}
+
+.go__over{
+   width: 100px;
+   height: 35px;
+   background-color: #4F68A4;
+   color: white;
+   font-family: WorkSans, sans-serif;
+}
+
+.consultation{
+   width: 100%;
+   margin: 83px 0 0 0;
+}
+
+.consultation__container{
+   max-width: 962px;
+   margin: 0 auto;
+}
+
+.consultation__container h1{
+   text-align: center;
+   font-family: WorkSans, sans-serif;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 140%;
+}
+
+.consultation__container p{
+   font-weight: 500;
+   font-size: 22.5px;
+   line-height: 140%;
+   font-family: WorkSans,
+   sans-serif;
+}
+.consultation__content{
+   display: flex;
+   justify-content: center;
+   margin: 15px auto;
+}
+
+.consultation__content img{
+   margin: 0 24px 0 24px;
+}
+
+.footer__container{
+   max-width: 962px;
+   margin: 0 auto;
+   
+
+}
+
+.footer__content{
+   display: flex;
+   justify-content: space-between;
+}
+
+.about__us h1{
+   font-weight: 600;
+   font-size: 13px;
+   line-height: 150%;
+   color: white;
+   margin: 77px 0 0 0;
+   font-family: WorkSans,
+   sans-serif;
+}
+
+.about__us{
+   background-image: url("../IMG/Rectangle__2.png");
+   background-repeat: no-repeat;
+   background-position-y: 37%;
+}
+
+
+.about__us p{
+   font-weight: 400;
+   font-size: 11px;
+   line-height: 120%;
+   color: #ADADAD;
+   font-family: WorkSans,
+   sans-serif;
+   margin: 32px 0 0 0;
+}
+
+.about__us a {
+   font-weight: 400;
+   font-size: 11px;
+   color: #ADADAD;
+   font-family: WorkSans,
+      sans-serif;
+   margin: 32px 0 0 0;
+   display: inline-block;
+   line-height: 1%;
+}
+
+.privacy__policy{
+   display: flex;
+   margin: 81px auto;
+   justify-content: center;
+}
+
+.privacy__policy p{
+font-weight: 400;
+font-size: 14px;
+line-height: 170%;
+color: #ADADAD;
+font-family: WorkSans,
+sans-serif;
+}
+
+.privacy__policy span{
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 170%;
+   color: white;
+   font-family: WorkSans,
+   sans-serif;
+}
+
+
+@media (max-width: 1600px)
+{
+
+}
+
+@media (max-width: 1440px)
+{
+
+}
+
+@media (max-width: 1160px)
+{
+header {
+   display: none;
+}
+
+
+}
+
+@media (max-width: 1100px)
+{
+
+.img__ques{
+   display: none;
+}
+
+.footer__container{
+   max-width: 768px;
+}
+
+.analog__container {
+   max-width: 768px;
+}
+
+.navigation__container{
+   max-width: 768px;
+}
+
+.questions__container {
+   max-width: 768px;
+}
+
+.mezim__container{
+   max-width: 768px;
+}
+
+.accordion__container {
+   max-width: 768px;
+}
+
+.mezim__content__text{
+   margin: 0 0 0 30px;
+}
+
+
+}
+
+
+
+@media (max-width: 768px)
+{
+
+.footer__content{
+   display: inline-block;
+}
+
+.mezim__content{
+   display: inline-block;
+}
+.special__decription{
+   display: inline-block;
+   padding: 0 0 0 0px;
+}
+
+.consultation__content{
+   display: inline-block;
+}
+
+.mezim__analog{
+   display: inline-block;
+}
+
+.square{
+   margin: 20px 0 0 0;
+}
+
+.questions__contetn{
+   display: inline-block;
+}
+
+.special__decription p{
+   
+   margin: 0 0 0 -10px;
+}
+
+.analog__container {
+   max-width: 435px;
+}
+
+.footer__container {
+   max-width: 435px;
+}
+
+.questions__container {
+   max-width: 435px;
+}
+
+.navigation__container{
+   max-width: 435px;
+}
+
+.accordion__container {
+   max-width: 435px;
+}
+
+.mezim__container{
+   max-width: 435px;
+}
+
+}
+
+@media (max-width-: 435px)
+{
+.navigation__container{
+   max-width: 375px;
+}
+
+.navigation__content a{
+   font-size: 16px;
+   margin: 0 0 0 20px;
+}
+
+.footer__container {
+   max-width: 375px;
+}
+
+.mezim__container{
+   max-width: 375px;
+}
+
+.mezim__content{
+   margin: 0 0 0 20px;
+}
+
+.questions__container {
+   max-width: 375px;
+}
+
+}
+
+@media (max-width: 375px)
+{
+.mezim__content{
+   margin: 0 0 0 10px;
+}
+
+.mezim__content__text{
+   margin: 0 0 0 -5px;
+}
+
+.navigation__content a{
+   font-size: 16px;
+   margin: 0 0 0 5px;
+}
+.navigation__container{
+   max-width: 375px;
+}
+
+.mezim__container{
+   max-width: 375px;
+}
+}
+
+@media (max-width: 320px)
+{
+
+}
