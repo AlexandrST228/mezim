@@ -143,7 +143,7 @@ header {
   font-size: 18px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  margin: 13px 0 0 0;
+  margin: 13px auto;
 }
 
 .accordion__content {
@@ -160,6 +160,14 @@ header {
   background-color: #607D8B;
 }
 
+.accordion span {
+  padding: 10px 0 0 10px;
+}
+
+form {
+  width: 100%;
+}
+
 .accordion:after {
   width: 40px;
   height: 40px;
@@ -170,10 +178,28 @@ header {
   font-weight: bold;
   float: left;
   font-family: WorkSans, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .active:after {
   content: "\2212";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .panel {
@@ -288,14 +314,17 @@ header {
 }
 
 .mezim__analog {
+  margin: 28px 0 0 0;
+  font-family: WorkSans, sans-serif;
+}
+
+.mezim__analog__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 28px 0 0 0;
-  font-family: WorkSans, sans-serif;
 }
 
 .square {
@@ -307,6 +336,9 @@ header {
   background-position: 50% 10%;
   -webkit-box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .square h1 {
@@ -393,6 +425,9 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 15px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .consultation__content img {
@@ -480,34 +515,65 @@ header {
 }
 
 @media (max-width: 1100px) {
-  .img__ques {
-    display: none;
-  }
-  .footer__container {
-    max-width: 768px;
-  }
-  .analog__container {
+  .header__container {
     max-width: 768px;
   }
   .navigation__container {
     max-width: 768px;
   }
-  .questions__container {
+  .mezim__container {
     max-width: 768px;
   }
-  .mezim__container {
+  .white__block__container {
+    max-width: 768px;
+  }
+  .mezim__content__text__container {
     max-width: 768px;
   }
   .accordion__container {
     max-width: 768px;
   }
-  .mezim__content__text {
-    margin: 0 0 0 30px;
+  .questions__container {
+    max-width: 768px;
+  }
+  .img__ques__container {
+    max-width: 768px;
+  }
+  .rect__ques__container {
+    max-width: 768px;
+  }
+  .form__container {
+    width: 768px;
+  }
+  .analog__container {
+    max-width: 768px;
+  }
+  .mezim__analog__container {
+    width: 768px;
+  }
+  .consultation__container {
+    max-width: 768px;
+  }
+  .footer__container {
+    max-width: 768px;
+  }
+  .name {
+    width: 768px;
+  }
+  .img__ques {
+    display: none;
+  }
+  .message {
+    width: 768px;
   }
 }
 
 @media (max-width: 768px) {
   .footer__content {
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .mezim__analog__container {
     display: inline-block;
   }
   .mezim__content {
@@ -515,7 +581,6 @@ header {
   }
   .special__decription {
     display: inline-block;
-    padding: 0 0 0 0px;
   }
   .consultation__content {
     display: inline-block;
@@ -523,72 +588,224 @@ header {
   .mezim__analog {
     display: inline-block;
   }
-  .square {
-    margin: 20px 0 0 0;
-  }
   .questions__contetn {
     display: inline-block;
   }
-  .special__decription p {
-    margin: 0 0 0 -10px;
+  .privacy__policy {
+    display: inline-block;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .analog__container {
-    max-width: 435px;
+  .about__us:nth-child(1) {
+    background-image: url("../IMG/Rectangle__2.png");
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
   }
-  .footer__container {
-    max-width: 435px;
+  .about__us:nth-child(2) {
+    background-image: url("../IMG/Rectangle__2.png");
+    background-repeat: no-repeat;
+    background-position: 50% 15%;
   }
-  .questions__container {
+  .about__us:nth-child(3) {
+    background-image: url("../IMG/Rectangle__2.png");
+    background-repeat: no-repeat;
+    background-position: 50% 15%;
+  }
+  .footer__content {
+    width: 435px;
+  }
+  .header__container {
     max-width: 435px;
   }
   .navigation__container {
+    max-width: 435px;
+  }
+  .mezim__container {
+    max-width: 435px;
+  }
+  .white__block__container {
+    max-width: 435px;
+  }
+  .mezim__content__text__container {
     max-width: 435px;
   }
   .accordion__container {
     max-width: 435px;
   }
-  .mezim__container {
+  .questions__container {
     max-width: 435px;
+  }
+  .img__ques__container {
+    max-width: 435px;
+  }
+  .rect__ques__container {
+    max-width: 435px;
+  }
+  .form__container {
+    width: 435px;
+  }
+  .analog__container {
+    max-width: 435px;
+  }
+  .mezim__analog__container {
+    width: 435px;
+  }
+  .name {
+    width: 435px;
+  }
+  .consultation__container {
+    max-width: 435px;
+  }
+  .consultation__content img {
+    display: none;
+  }
+  .consultation__content {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .consultation__content {
+    width: 435px;
+  }
+  .footer__container {
+    max-width: 435px;
+  }
+  .footer__content {
+    text-align: center;
+  }
+  .message {
+    width: 435px;
   }
 }
 
-@media (max-width-: 435px) {
+@media (max-width: 435px) {
+  .navigation__content a {
+    font-size: 16px;
+  }
+  .header__container {
+    max-width: 375px;
+  }
   .navigation__container {
     max-width: 375px;
   }
-  .navigation__content a {
-    font-size: 16px;
-    margin: 0 0 0 20px;
-  }
-  .footer__container {
-    max-width: 375px;
+  .footer__content {
+    width: 375px;
   }
   .mezim__container {
     max-width: 375px;
   }
-  .mezim__content {
-    margin: 0 0 0 20px;
+  .white__block__container {
+    max-width: 375px;
+  }
+  .mezim__content__text__container {
+    max-width: 375px;
+  }
+  .accordion__container {
+    max-width: 375px;
   }
   .questions__container {
     max-width: 375px;
   }
+  .img__ques__container {
+    max-width: 375px;
+  }
+  .rect__ques__container {
+    max-width: 375px;
+  }
+  .name {
+    width: 375px;
+  }
+  .form__container {
+    width: 375px;
+  }
+  .analog__container {
+    max-width: 375px;
+  }
+  .mezim__analog__container {
+    width: 375px;
+  }
+  .square {
+    margin: 25px auto;
+  }
+  .consultation__container {
+    max-width: 375px;
+  }
+  .consultation__content {
+    width: 375px;
+  }
+  .footer__container {
+    max-width: 375px;
+  }
+  .message {
+    width: 375px;
+  }
 }
 
 @media (max-width: 375px) {
-  .mezim__content {
-    margin: 0 0 0 10px;
-  }
-  .mezim__content__text {
-    margin: 0 0 0 -5px;
-  }
   .navigation__content a {
     font-size: 16px;
-    margin: 0 0 0 5px;
+  }
+  .header__container {
+    max-width: 320px;
+  }
+  .footer__content {
+    width: 320px;
   }
   .navigation__container {
-    max-width: 375px;
+    max-width: 320px;
   }
   .mezim__container {
-    max-width: 375px;
+    max-width: 320px;
+  }
+  .white__block__container {
+    max-width: 320px;
+  }
+  .mezim__content__text__container {
+    max-width: 320px;
+  }
+  .accordion__container {
+    max-width: 320px;
+  }
+  .questions__container {
+    max-width: 320px;
+  }
+  .img__ques__container {
+    max-width: 320px;
+  }
+  .rect__ques__container {
+    max-width: 320px;
+  }
+  .form__container {
+    width: 320px;
+  }
+  .analog__container {
+    max-width: 320px;
+  }
+  .mezim__analog__container {
+    width: 320px;
+  }
+  .name {
+    width: 320px;
+  }
+  .message {
+    width: 320px;
+  }
+  .consultation__container {
+    max-width: 320px;
+  }
+  .consultation__content {
+    width: 320px;
+  }
+  .footer__container {
+    max-width: 320px;
   }
 }
